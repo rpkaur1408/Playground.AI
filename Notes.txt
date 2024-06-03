@@ -1,0 +1,3 @@
+npm init (-y) --> to create package.json  (-y  -->   for no questions)
+
+npm i express --> for node modules and package-lock.json
