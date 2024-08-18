@@ -2,13 +2,14 @@ const express = require("express");
 
 const app = express()
 const PORT = 8080
+const path = require('path');
 
 const modelService = require("./modules/modelService")
 
-app.use(express.static("public"))
+app.use(express.static(__dirname + '/public'));
 
 app.get("/",(req,res)=>{
-    res.send("hello");
+    res.sendFile(path.join(__dirname, "/views/index.html"))
 })
 
 app.get("/models",(req,res)=>{

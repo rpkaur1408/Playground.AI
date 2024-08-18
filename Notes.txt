@@ -1,9 +1,30 @@
-npm init (-y) --> to create package.json  (-y  -->   for no questions)
+1. npm init (-y) --> to create package.json  (-y  -->   for no questions)
 
-npm i express --> for node modules and package-lock.json
+2. npm i express --> for node modules and package-lock.json
 
-npm install -D tailwindcss --> for tailwind
+3. npm install -D tailwindcss --> for tailwind
 
-npx tailwindcss init --> "initialize" Tailwind and create a "tailwind.config.js" file
+4. npx tailwindcss init --> "initialize" Tailwind and create a "tailwind.config.js" file
 --> inside it we need to put all the files we need to track 
 --> in our case it is all the html files    (`./views/**/*.html`)
+
+5. create "tailwind.css"
+--> Inside it put the following
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+6. In package.json, in script element of array add the below code
+"tw:build": "tailwindcss build -i ./public/css/tailwind.css -o ./public/css/main.css"
+
+7. adding the code below to html document
+
+ <link rel="stylesheet" href="/css/main.css" />
+
+<div class="w-[150px] h-[80px] shadow-2xl bg-white rounded-lg flex justify-center items-center">
+  <p class="text-center">shadow-2xl</p>
+</div>
+
+8. Then run the cmd below (this will create main.css)
+
+npm run tw:build
