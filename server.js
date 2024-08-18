@@ -5,6 +5,8 @@ const PORT = 8080
 
 const modelService = require("./modules/modelService")
 
+app.use(express.static("public"))
+
 app.get("/",(req,res)=>{
     res.send("hello");
 })
