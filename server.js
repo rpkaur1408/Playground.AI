@@ -26,7 +26,7 @@ app.get("/models/:id",(req,res)=>{
 })
 
 app.get("*", (req, res) => {
-    res.send("<h1>404 THIS ROUTE DOES NOT EXIST</h1>")
+    res.send("404")
 })
 
  modelService.initialize().then(()=>{
