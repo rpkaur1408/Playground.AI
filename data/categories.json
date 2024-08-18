@@ -1,0 +1,14 @@
+[
+    {
+        "category": "assistant",
+        "imageURL": "https://t4.ftcdn.net/jpg/04/14/83/07/360_F_414830738_8D0XSvkNnTyoQD1KqiboRwYMhzqAaxmY.jpg"
+    },
+    {
+        "category": "tutor",
+        "imageURL": "https://static.vecteezy.com/system/resources/previews/005/383/410/original/machine-learning-glyph-icon-artificial-intelligence-teacher-bot-graduated-robot-chatbot-bot-in-graduation-hat-silhouette-symbol-negative-space-isolated-illustration-vector.jpg"
+    },
+    {
+        "category": "coding",
+        "imageURL": "https://static.vecteezy.com/system/resources/previews/002/238/479/non_2x/coding-icon-free-vector.jpg"
+    }
+]
