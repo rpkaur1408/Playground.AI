@@ -28,3 +28,7 @@
 8. Then run the cmd below (this will create main.css)
 
 npm run tw:build
+
+9. Installing Daisy UI
+
+npm i @tailwindcss/typography daisyui
