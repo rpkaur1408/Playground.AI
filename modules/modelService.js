@@ -36,11 +36,22 @@ let models = []
     }
  )}
 
+ function getModelByCategory(categoryID) {
+    return new Promise((resolve, reject) => {
+        let modelByCategory = models.filter(model => model.category == categoryID)
+        if (modelByCategory) {
+            resolve(modelByCategory)
+        } else {
+            reject("No model by that Category found")
+        }
 
+    })
+}
 //To export the functions specified outside this module for import of server.js
 //global object
 module.exports = {
    initialize,
    getModels,
-   getModelByID
+   getModelByID,
+   getModelByCategory 
 }
