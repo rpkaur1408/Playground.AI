@@ -12,5 +12,8 @@
   "dependencies": {
     "express": "^4.19.2"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
 }

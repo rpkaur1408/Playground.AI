@@ -1,3 +1,9 @@
 npm init (-y) --> to create package.json  (-y  -->   for no questions)
 
 npm i express --> for node modules and package-lock.json
+
+npm install -D tailwindcss --> for tailwind
+
+npx tailwindcss init --> "initialize" Tailwind and create a "tailwind.config.js" file
+--> inside it we need to put all the files we need to track 
+--> in our case it is all the html files    (`./views/**/*.html`)
