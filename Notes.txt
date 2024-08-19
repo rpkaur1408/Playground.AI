@@ -1,7 +1,7 @@
 1. npm init (-y) --> to create package.json  (-y  -->   for no questions)
 
 2. npm i express --> for node modules and package-lock.json
-
+------------------------  TAILWIND CSS
 3. npm install -D tailwindcss --> for tailwind
 
 4. npx tailwindcss init --> "initialize" Tailwind and create a "tailwind.config.js" file
@@ -32,3 +32,26 @@ npm run tw:build
 9. Installing Daisy UI
 
 npm i @tailwindcss/typography daisyui
+
+
+------------------------- EJS  (Embedded JavaScript Templates)
+
+
+10. npm install ejs  -->> Installing ejs dependency
+
+11. adding app element to add ejs to server.js
+
+app.set('view engine', 'ejs');
+
+12. rendering the views 
+app.get("/about", (req, res) => {
+    // to render about view 
+    res.render("about")
+})
+
+
+13. Adding partials to the views folder and adding navbar to it
+
+ <%-include('partials/navbar')  %> --> adding ejs element to places of navbar
+
+ 14. changing all the html extensions to ejs
