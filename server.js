@@ -9,9 +9,24 @@ const modelService = require("./modules/modelService")
 
 app.use(express.static(__dirname + '/public'));
 
-app.get("/",(req,res)=>{
-    res.sendFile(path.join(__dirname, "/views/index.html"))
+
+app.get("/",(req, res) => {
+   //to call getModels fn from modelService module
+    modelService.getModels().then((models) => {
+        //to render dynaic HTML view --> ejs
+        res.render("index", {
+            //assign value of retrievd models to a new models array , which is then passed to index view to display it
+            models: models
+        })
+    })
+
+    
 })
+app.get("/about", (req, res) => {
+    // to render about view 
+    res.render("about")
+})
+
 
 app.get("/models",(req,res)=>{
     modelService.getModels().then((models)=>{
