@@ -6,7 +6,7 @@ const path = require('path');
 app.set('view engine', 'ejs');
 
 const modelService = require("./modules/modelService")
-
+app.set('views',path.join(__dirname,'/views'));
 app.use(express.static(__dirname + '/public'));
 
 
