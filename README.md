@@ -5,6 +5,6 @@ PlaygroundAI is your one-stop solution for boosting productivity and efficiency 
 
 <h3>About the developers</h3>
 <ul>
-  <li>Divyanshu Dugar</li>
+  <li>[Rehatpreet Kaur](https://portfolio-rehatpreet-kaurs-projects.vercel.app/about)</li>
   <li>Divyanshu Dugar</li>
 </ul>
