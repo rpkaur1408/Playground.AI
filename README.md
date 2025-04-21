@@ -1,4 +1,4 @@
-## PLAYGROUND AI
+### PLAYGROUND AI
 
 <h1>Hello everyone, welcome to PlaygroundAI!</h1>
 
